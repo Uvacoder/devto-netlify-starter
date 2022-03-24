@@ -1,0 +1,19 @@
+.m-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Uncomment if you find it useful
+// @each $key, $color in $brand-colors {
+//   .background-#{$key} {
+//     background-color: $color;
+//   }
+// }
+
+$ink-colors: primary, text, gray;
+
+@each $key in $ink-colors {
+  .ink-#{$key} {
+    color: theme-color(#{$key});
+  }
+}
